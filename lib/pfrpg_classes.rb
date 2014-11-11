@@ -1,3 +1,6 @@
+module PfrpgClasses
+end
+
 require 'pfrpg_classes/heroclass'
 require 'pfrpg_classes/heroclass/barbarian'
 require 'pfrpg_classes/heroclass/bard'
@@ -20,6 +23,3 @@ require 'pfrpg_classes/heroclass/loremaster'
 require 'pfrpg_classes/heroclass/mystic_theurge'
 require 'pfrpg_classes/heroclass/pathfinder_chronicler'
 require 'pfrpg_classes/heroclass/shadowdancer'
-
-module PfrpgClasses
-end
