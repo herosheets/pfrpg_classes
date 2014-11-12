@@ -40,7 +40,7 @@ class PfrpgClasses::Fighter < PfrpgClasses::Heroclass
   end
 
   def bonuses_for_level(level)
-    PfrpgTables::Heroclasses::Fighter.level_bonus(level)
+    PfrpgTables::Tables::Heroclasses::Fighter.level_bonus(level)
   end
 
   def get_spells_table(level)

@@ -38,7 +38,7 @@ class PfrpgClasses::EldritchKnight < PfrpgClasses::Heroclass
   end
 
   def bonuses_for_level(level)
-    PfrpgTables::Heroclasses::EldritchKnight.level_bonus(level)
+    PfrpgTables::Tables::Heroclasses::EldritchKnight.level_bonus(level)
   end
 
   def get_spells_table

@@ -31,7 +31,7 @@ class PfrpgClasses::Duelist < PfrpgClasses::Heroclass
   end
 
   def bonuses_for_level(level)
-    PfrpgTables::Heroclasses::Duelist.level_bonus(level)
+    PfrpgTables::Tables::Heroclasses::Duelist.level_bonus(level)
   end
 
   def get_spells_table

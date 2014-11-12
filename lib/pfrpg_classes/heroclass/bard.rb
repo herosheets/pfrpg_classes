@@ -17,7 +17,7 @@ class PfrpgClasses::Bard < PfrpgClasses::Heroclass
   end
 
   def bonuses_for_level(level)
-     PfrpgTables::Heroclasses::Bard.level_bonus(level)
+     PfrpgTables::Tables::Heroclasses::Bard.level_bonus(level)
   end
 
   def create_feature(f)

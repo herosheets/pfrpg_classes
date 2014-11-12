@@ -17,7 +17,7 @@ class PfrpgClasses::Ranger < PfrpgClasses::Heroclass
   end
 
   def bonuses_for_level(level)
-    PfrpgTables::Heroclasses::Ranger.level_bonus(level)
+    PfrpgTables::Tables::Heroclasses::Ranger.level_bonus(level)
   end
 
   def create_feature(f)
@@ -77,15 +77,15 @@ class PfrpgClasses::Ranger < PfrpgClasses::Heroclass
   end
 
   def favored_enemies
-    PfrpgTables::Heroclasses::Ranger.favored_enemies
+    PfrpgTables::Tables::Heroclasses::Ranger.favored_enemies
   end
 
   def animals
-    PfrpgTables::Heroclasses::Ranger.animals
+    PfrpgTables::Tables::Heroclasses::Ranger.animals
   end
 
   def combat_style_feats(level)
-    PfrpgTables::Heroclasses::Ranger.combat_style_feats(level)
+    PfrpgTables::Tables::Heroclasses::Ranger.combat_style_feats(level)
   end
 
   def suggested_items

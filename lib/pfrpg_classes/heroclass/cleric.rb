@@ -21,7 +21,7 @@ class PfrpgClasses::Cleric < PfrpgClasses::Heroclass
   end
 
   def bonuses_for_level(level)
-    PfrpgTables::Heroclasses::Cleric.level_bonus(level)
+    PfrpgTables::Tables::Heroclasses::Cleric.level_bonus(level)
   end
 
   def create_feature(f)

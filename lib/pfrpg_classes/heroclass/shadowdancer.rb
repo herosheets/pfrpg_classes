@@ -34,7 +34,7 @@ class PfrpgClasses::Shadowdancer < PfrpgClasses::Heroclass
   end
 
   def bonuses_for_level(level)
-    PfrpgTables::Heroclasses::Shadowdancer.level_bonus(level)
+    PfrpgTables::Tables::Heroclasses::Shadowdancer.level_bonus(level)
   end
 
   def get_spells_table

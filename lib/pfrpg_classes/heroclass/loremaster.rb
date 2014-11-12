@@ -50,7 +50,7 @@ class PfrpgClasses::Loremaster < PfrpgClasses::Heroclass
   end
 
   def bonuses_for_level(level)
-    PfrpgTables::Heroclasses::Loremaster.level_bonus(level)
+    PfrpgTables::Tables::Heroclasses::Loremaster.level_bonus(level)
   end
 
   def get_spells_table

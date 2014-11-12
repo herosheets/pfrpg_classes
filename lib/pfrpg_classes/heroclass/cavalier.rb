@@ -17,7 +17,7 @@ class PfrpgClasses::Wizard < PfrpgClasses::Heroclass
   end
 
   def bonuses_for_level(level)
-    PfrpgTables::Heroclasses::Wizard.level_bonus(level)
+    PfrpgTables::Tables::Heroclasses::Wizard.level_bonus(level)
   end
 
   def create_feature(f)
@@ -75,11 +75,11 @@ class PfrpgClasses::Wizard < PfrpgClasses::Heroclass
   end
 
   def familiars
-    PfrpgTables::Heroclasses::Wizard.familiars
+    PfrpgTables::Tables::Heroclasses::Wizard.familiars
   end
 
   def bond_objects
-    PfrpgTables::Heroclasses::Wizard.bond_objects
+    PfrpgTables::Tables::Heroclasses::Wizard.bond_objects
   end
 
   def suggested_items

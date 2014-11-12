@@ -41,7 +41,7 @@ class PfrpgClasses::DragonDisciple < PfrpgClasses::Heroclass
   end
 
   def bonuses_for_level(level)
-    PfrpgTables::Heroclasses::DragonDisciple.level_bonus(level)
+    PfrpgTables::Tables::Heroclasses::DragonDisciple.level_bonus(level)
   end
 
   def get_spells_table

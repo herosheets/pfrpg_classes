@@ -17,7 +17,7 @@ class PfrpgClasses::Paladin < PfrpgClasses::Heroclass
   end
 
   def bonuses_for_level(level)
-    PfrpgTables::Heroclasses::Paladin.level_bonus(level)
+    PfrpgTables::Tables::Heroclasses::Paladin.level_bonus(level)
   end
 
   def create_feature(f)

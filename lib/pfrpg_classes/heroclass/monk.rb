@@ -17,7 +17,7 @@ class PfrpgClasses::Monk < PfrpgClasses::Heroclass
   end
 
   def bonuses_for_level(level)
-    PfrpgTables::Heroclasses::Monk.level_bonus(level)
+    PfrpgTables::Tables::Heroclasses::Monk.level_bonus(level)
   end
 
   def create_feature(f)
@@ -67,11 +67,11 @@ class PfrpgClasses::Monk < PfrpgClasses::Heroclass
   end
 
   def unarmed_dmg(size, level)
-    PfrpgTables::Heroclasses::Monk.unarmed_strike_damage(size, level)
+    PfrpgTables::Tables::Heroclasses::Monk.unarmed_strike_damage(size, level)
   end
 
   def monk_bonus_feats(level)
-    PfrpgTables::Heroclasses::Monk.monk_bonus_feats(level)
+    PfrpgTables::Tables::Heroclasses::Monk.monk_bonus_feats(level)
   end
 
   def get_unarmed_weapon(monk_level)

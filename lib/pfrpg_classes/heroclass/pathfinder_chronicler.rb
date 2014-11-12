@@ -56,7 +56,7 @@ class PfrpgClasses::PathfinderChronicler < PfrpgClasses::Heroclass
   end
 
   def bonuses_for_level(level)
-    PfrpgTables::Heroclasses::PathfinderChronicler.level_bonus(level)
+    PfrpgTables::Tables::Heroclasses::PathfinderChronicler.level_bonus(level)
   end
 
   def get_spells_table

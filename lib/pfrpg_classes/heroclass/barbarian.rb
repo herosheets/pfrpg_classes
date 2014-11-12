@@ -17,7 +17,7 @@ class PfrpgClasses::Barbarian < PfrpgClasses::Heroclass
   end
 
   def bonuses_for_level(level)
-     PfrpgTables::Heroclasses::Barbarian.level_bonus(level)
+     PfrpgTables::Tables::Heroclasses::Barbarian.level_bonus(level)
   end
 
   def create_feature(f)

@@ -25,7 +25,7 @@ class PfrpgClasses::ArcaneArcher < PfrpgClasses::Heroclass
   end
 
   def bonuses_for_level(level)
-    PfrpgTables::Heroclasses::ArcaneArcher.level_bonus(level)
+    PfrpgTables::Tables::Heroclasses::ArcaneArcher.level_bonus(level)
   end
 
   def get_spells_table

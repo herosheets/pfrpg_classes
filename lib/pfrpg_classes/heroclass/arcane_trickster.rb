@@ -40,7 +40,7 @@ class PfrpgClasses::ArcaneTrickster < PfrpgClasses::Heroclass
   end
 
   def bonuses_for_level(level)
-    PfrpgTables::Heroclasses::ArcaneTrickster.level_bonus(level)
+    PfrpgTables::Tables::Heroclasses::ArcaneTrickster.level_bonus(level)
   end
 
   def get_spells_table

@@ -17,7 +17,7 @@ class PfrpgClasses::Druid < PfrpgClasses::Heroclass
   end
 
   def bonuses_for_level(level)
-    PfrpgTables::Heroclasses::Druid.level_bonus(level)
+    PfrpgTables::Tables::Heroclasses::Druid.level_bonus(level)
   end
 
   def create_feature(f)

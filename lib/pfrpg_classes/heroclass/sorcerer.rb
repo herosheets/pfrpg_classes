@@ -17,7 +17,7 @@ class PfrpgClasses::Sorcerer < PfrpgClasses::Heroclass
   end
 
   def bonuses_for_level(level)
-    PfrpgTables::Heroclasses::Sorcerer.level_bonus(level)
+    PfrpgTables::Tables::Heroclasses::Sorcerer.level_bonus(level)
   end
 
   def create_feature(f)

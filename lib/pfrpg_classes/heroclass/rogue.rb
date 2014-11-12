@@ -21,7 +21,7 @@ class PfrpgClasses::Rogue < PfrpgClasses::Heroclass
   end
 
   def bonuses_for_level(level)
-    PfrpgTables::Heroclasses::Rogue.level_bonus(level)
+    PfrpgTables::Tables::Heroclasses::Rogue.level_bonus(level)
   end
 
   def create_feature(f)
