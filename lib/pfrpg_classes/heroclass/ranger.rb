@@ -45,21 +45,21 @@ class PfrpgClasses::Ranger < PfrpgClasses::Heroclass
   end
 
   def skills
-    [PfrpgSkills::Climb.new,
-     PfrpgSkills::Craft.new,
-     PfrpgSkills::HandleAnimal.new,
-     PfrpgSkills::Heal.new,
-     PfrpgSkills::Intimidate.new,
-     PfrpgSkills::Knowledge.new("Dungeoneering"),
-     PfrpgSkills::Knowledge.new("Geography"),
-     PfrpgSkills::Knowledge.new("Nature"),
-     PfrpgSkills::Perception.new,
-     PfrpgSkills::Profession.new,
-     PfrpgSkills::Ride.new,
-     PfrpgSkills::Spellcraft.new,
-     PfrpgSkills::Stealth.new,
-     PfrpgSkills::Survival.new,
-     PfrpgSkills::Swim.new,
+    [PfrpgSkills::Skills::Climb.new,
+     PfrpgSkills::Skills::Craft.new,
+     PfrpgSkills::Skills::HandleAnimal.new,
+     PfrpgSkills::Skills::Heal.new,
+     PfrpgSkills::Skills::Intimidate.new,
+     PfrpgSkills::Skills::Knowledge.new("Dungeoneering"),
+     PfrpgSkills::Skills::Knowledge.new("Geography"),
+     PfrpgSkills::Skills::Knowledge.new("Nature"),
+     PfrpgSkills::Skills::Perception.new,
+     PfrpgSkills::Skills::Profession.new,
+     PfrpgSkills::Skills::Ride.new,
+     PfrpgSkills::Skills::Spellcraft.new,
+     PfrpgSkills::Skills::Stealth.new,
+     PfrpgSkills::Skills::Survival.new,
+     PfrpgSkills::Skills::Swim.new,
     ]
   end
 

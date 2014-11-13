@@ -26,14 +26,14 @@ class PfrpgClasses::EldritchKnight < PfrpgClasses::Heroclass
 
   def skills
     [
-     PfrpgSkills::Climb.new,
-     PfrpgSkills::Knowledge.new('Arcana'),
-     PfrpgSkills::Knowledge.new('Nobility'),
-     PfrpgSkills::Linguistics.new,
-     PfrpgSkills::Ride.new,
-     PfrpgSkills::SenseMotive.new,
-     PfrpgSkills::Spellcraft.new,
-     PfrpgSkills::Swim.new
+     PfrpgSkills::Skill::Climb.new,
+     PfrpgSkills::Skill::Knowledge.new('Arcana'),
+     PfrpgSkills::Skill::Knowledge.new('Nobility'),
+     PfrpgSkills::Skill::Linguistics.new,
+     PfrpgSkills::Skill::Ride.new,
+     PfrpgSkills::Skill::SenseMotive.new,
+     PfrpgSkills::Skill::Spellcraft.new,
+     PfrpgSkills::Skill::Swim.new
     ]
   end
 

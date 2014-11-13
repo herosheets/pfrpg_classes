@@ -45,27 +45,27 @@ class PfrpgClasses::Rogue < PfrpgClasses::Heroclass
   end
 
   def skills
-    [PfrpgSkills::Acrobatics.new,
-     PfrpgSkills::Appraise.new,
-     PfrpgSkills::Bluff.new,
-     PfrpgSkills::Climb.new,
-     PfrpgSkills::Craft.new,
-     PfrpgSkills::Diplomacy.new,
-     PfrpgSkills::DisableDevice.new,
-     PfrpgSkills::Disguise.new,
-     PfrpgSkills::EscapeArtist.new,
-     PfrpgSkills::Intimidate.new,
-     PfrpgSkills::Knowledge.new("Dungeoneering"),
-     PfrpgSkills::Knowledge.new("Local"),
-     PfrpgSkills::Linguistics.new,
-     PfrpgSkills::Perception.new,
-     PfrpgSkills::Perform.new,
-     PfrpgSkills::Profession.new,
-     PfrpgSkills::SenseMotive.new,
-     PfrpgSkills::SleightOfHand.new,
-     PfrpgSkills::Stealth.new,
-     PfrpgSkills::Swim.new,
-     PfrpgSkills::UseMagicDevice.new
+    [PfrpgSkills::Skill::Acrobatics.new,
+     PfrpgSkills::Skill::Appraise.new,
+     PfrpgSkills::Skill::Bluff.new,
+     PfrpgSkills::Skill::Climb.new,
+     PfrpgSkills::Skill::Craft.new,
+     PfrpgSkills::Skill::Diplomacy.new,
+     PfrpgSkills::Skill::DisableDevice.new,
+     PfrpgSkills::Skill::Disguise.new,
+     PfrpgSkills::Skill::EscapeArtist.new,
+     PfrpgSkills::Skill::Intimidate.new,
+     PfrpgSkills::Skill::Knowledge.new("Dungeoneering"),
+     PfrpgSkills::Skill::Knowledge.new("Local"),
+     PfrpgSkills::Skill::Linguistics.new,
+     PfrpgSkills::Skill::Perception.new,
+     PfrpgSkills::Skill::Perform.new,
+     PfrpgSkills::Skill::Profession.new,
+     PfrpgSkills::Skill::SenseMotive.new,
+     PfrpgSkills::Skill::SleightOfHand.new,
+     PfrpgSkills::Skill::Stealth.new,
+     PfrpgSkills::Skill::Swim.new,
+     PfrpgSkills::Skill::UseMagicDevice.new
     ]
   end
 

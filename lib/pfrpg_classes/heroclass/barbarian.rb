@@ -41,16 +41,16 @@ class PfrpgClasses::Barbarian < PfrpgClasses::Heroclass
   end
 
   def skills
-    [PfrpgSkills::Acrobatics.new,
-     PfrpgSkills::Climb.new,
-     PfrpgSkills::Craft.new,
-     PfrpgSkills::HandleAnimal.new,
-     PfrpgSkills::Intimidate.new,
-     PfrpgSkills::Knowledge.new("Nature"),
-     PfrpgSkills::Perception.new,
-     PfrpgSkills::Ride.new,
-     PfrpgSkills::Survival.new,
-     PfrpgSkills::Swim.new,
+    [PfrpgSkills::Skill::Acrobatics.new,
+     PfrpgSkills::Skill::Climb.new,
+     PfrpgSkills::Skill::Craft.new,
+     PfrpgSkills::Skill::HandleAnimal.new,
+     PfrpgSkills::Skill::Intimidate.new,
+     PfrpgSkills::Skill::Knowledge.new("Nature"),
+     PfrpgSkills::Skill::Perception.new,
+     PfrpgSkills::Skill::Ride.new,
+     PfrpgSkills::Skill::Survival.new,
+     PfrpgSkills::Skill::Swim.new,
     ]
   end
 

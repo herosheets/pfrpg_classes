@@ -45,16 +45,16 @@ class PfrpgClasses::Paladin < PfrpgClasses::Heroclass
   end
 
   def skills
-    [PfrpgSkills::Craft.new,
-     PfrpgSkills::Diplomacy.new,
-     PfrpgSkills::HandleAnimal.new,
-     PfrpgSkills::Heal.new,
-     PfrpgSkills::Knowledge.new("Nobility"),
-     PfrpgSkills::Knowledge.new("Religion"),
-     PfrpgSkills::Profession.new,
-     PfrpgSkills::Ride.new,
-     PfrpgSkills::SenseMotive.new,
-     PfrpgSkills::Spellcraft.new,
+    [PfrpgSkills::Skill::Craft.new,
+     PfrpgSkills::Skill::Diplomacy.new,
+     PfrpgSkills::Skill::HandleAnimal.new,
+     PfrpgSkills::Skill::Heal.new,
+     PfrpgSkills::Skill::Knowledge.new("Nobility"),
+     PfrpgSkills::Skill::Knowledge.new("Religion"),
+     PfrpgSkills::Skill::Profession.new,
+     PfrpgSkills::Skill::Ride.new,
+     PfrpgSkills::Skill::SenseMotive.new,
+     PfrpgSkills::Skill::Spellcraft.new,
     ]
   end
 

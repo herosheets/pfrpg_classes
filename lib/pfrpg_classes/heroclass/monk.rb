@@ -41,20 +41,20 @@ class PfrpgClasses::Monk < PfrpgClasses::Heroclass
   end
 
   def skills
-    [PfrpgSkills::Acrobatics.new,
-     PfrpgSkills::Climb.new,
-     PfrpgSkills::Craft.new,
-     PfrpgSkills::EscapeArtist.new,
-     PfrpgSkills::Intimidate.new,
-     PfrpgSkills::Knowledge.new("History"),
-     PfrpgSkills::Knowledge.new("Religion"),
-     PfrpgSkills::Perception.new,
-     PfrpgSkills::Perform.new,
-     PfrpgSkills::Profession.new,
-     PfrpgSkills::Ride.new,
-     PfrpgSkills::SenseMotive.new,
-     PfrpgSkills::Stealth.new,
-     PfrpgSkills::Swim.new,
+    [PfrpgSkills::Skill::Acrobatics.new,
+     PfrpgSkills::Skill::Climb.new,
+     PfrpgSkills::Skill::Craft.new,
+     PfrpgSkills::Skill::EscapeArtist.new,
+     PfrpgSkills::Skill::Intimidate.new,
+     PfrpgSkills::Skill::Knowledge.new("History"),
+     PfrpgSkills::Skill::Knowledge.new("Religion"),
+     PfrpgSkills::Skill::Perception.new,
+     PfrpgSkills::Skill::Perform.new,
+     PfrpgSkills::Skill::Profession.new,
+     PfrpgSkills::Skill::Ride.new,
+     PfrpgSkills::Skill::SenseMotive.new,
+     PfrpgSkills::Skill::Stealth.new,
+     PfrpgSkills::Skill::Swim.new,
     ]
   end
 

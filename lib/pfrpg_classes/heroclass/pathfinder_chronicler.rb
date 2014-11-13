@@ -22,20 +22,20 @@ class PfrpgClasses::PathfinderChronicler < PfrpgClasses::Heroclass
 
   def skills
     non_knowledge =
-      [PfrpgSkills::Appraise.new,
-       PfrpgSkills::Bluff.new,
-       PfrpgSkills::Diplomacy.new,
-       PfrpgSkills::Disguise.new,
-       PfrpgSkills::EscapeArtist.new,
-       PfrpgSkills::Intimidate.new,
-       PfrpgSkills::Linguistics.new,
-       PfrpgSkills::Perception.new,
-       PfrpgSkills::Perform.new,
-       PfrpgSkills::Ride.new,
-       PfrpgSkills::SenseMotive.new,
-       PfrpgSkills::SleightOfHand.new,
-       PfrpgSkills::Survival.new,
-       PfrpgSkills::UseMagicDevice.new
+      [PfrpgSkills::Skill::Appraise.new,
+       PfrpgSkills::Skill::Bluff.new,
+       PfrpgSkills::Skill::Diplomacy.new,
+       PfrpgSkills::Skill::Disguise.new,
+       PfrpgSkills::Skill::EscapeArtist.new,
+       PfrpgSkills::Skill::Intimidate.new,
+       PfrpgSkills::Skill::Linguistics.new,
+       PfrpgSkills::Skill::Perception.new,
+       PfrpgSkills::Skill::Perform.new,
+       PfrpgSkills::Skill::Ride.new,
+       PfrpgSkills::Skill::SenseMotive.new,
+       PfrpgSkills::Skill::SleightOfHand.new,
+       PfrpgSkills::Skill::Survival.new,
+       PfrpgSkills::Skill::UseMagicDevice.new
       ]
     knowledge =
       [ 'Arcana',
@@ -50,7 +50,7 @@ class PfrpgClasses::PathfinderChronicler < PfrpgClasses::Heroclass
         'Religion'
       ]
     knowledge.each do |k|
-      non_knowledge <<PfrpgSkills::Knowledge.new(k)
+      non_knowledge << PfrpgSkills::Skill::Knowledge.new(k)
     end
     return non_knowledge
   end

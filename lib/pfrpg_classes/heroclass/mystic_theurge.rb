@@ -21,10 +21,10 @@ class PfrpgClasses::MysticTheurge < PfrpgClasses::Heroclass
   end
 
   def skills
-    [PfrpgSkills::Knowledge.new("Arcana"),
-     PfrpgSkills::Knowledge.new("Religion"),
-     PfrpgSkills::SenseMotive.new,
-     PfrpgSkills::Spellcraft.new,
+    [PfrpgSkills::Skill::Knowledge.new("Arcana"),
+     PfrpgSkills::Skill::Knowledge.new("Religion"),
+     PfrpgSkills::Skill::SenseMotive.new,
+     PfrpgSkills::Skill::Spellcraft.new,
     ]
   end
 

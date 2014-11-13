@@ -1,25 +1,25 @@
 PATH
   remote: .
   specs:
-    pfrpg_classes (0.0.1)
+    pfrpg_classes (0.0.3)
       rails (~> 4.1.1)
 
 PATH
   remote: ../pfrpg_core/
   specs:
-    pfrpg_core (0.0.1)
+    pfrpg_core (0.0.2)
       rails (~> 4.1.1)
 
 PATH
   remote: ../pfrpg_skills/
   specs:
-    pfrpg_skills (0.0.1)
-      rails (~> 4.1.1)
+    pfrpg_skills (0.0.2)
+      rails (~> 4.1.7)
 
 PATH
   remote: ../pfrpg_tables/
   specs:
-    pfrpg_tables (0.0.1)
+    pfrpg_tables (0.0.2)
       rails (~> 4.1.1)
 
 GEM

@@ -45,15 +45,15 @@ class PfrpgClasses::Sorcerer < PfrpgClasses::Heroclass
   end
 
   def skills
-    [PfrpgSkills::Appraise.new,
-     PfrpgSkills::Bluff.new,
-     PfrpgSkills::Craft.new,
-     PfrpgSkills::Fly.new,
-     PfrpgSkills::Intimidate.new,
-     PfrpgSkills::Knowledge.new('Arcana'),
-     PfrpgSkills::Profession.new,
-     PfrpgSkills::Spellcraft.new,
-     PfrpgSkills::UseMagicDevice.new
+    [PfrpgSkills::Skill::Appraise.new,
+     PfrpgSkills::Skill::Bluff.new,
+     PfrpgSkills::Skill::Craft.new,
+     PfrpgSkills::Skill::Fly.new,
+     PfrpgSkills::Skill::Intimidate.new,
+     PfrpgSkills::Skill::Knowledge.new('Arcana'),
+     PfrpgSkills::Skill::Profession.new,
+     PfrpgSkills::Skill::Spellcraft.new,
+     PfrpgSkills::Skill::UseMagicDevice.new
     ]
   end
 

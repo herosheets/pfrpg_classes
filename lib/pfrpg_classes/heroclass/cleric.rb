@@ -38,18 +38,18 @@ class PfrpgClasses::Cleric < PfrpgClasses::Heroclass
 
   def skills
     [
-     PfrpgSkills::Appraise.new,
-     PfrpgSkills::Craft.new,
-     PfrpgSkills::Diplomacy.new,
-     PfrpgSkills::Heal.new,
-     PfrpgSkills::Knowledge.new('Arcana'),
-     PfrpgSkills::Knowledge.new('History'),
-     PfrpgSkills::Knowledge.new('Nobility'),
-     PfrpgSkills::Knowledge.new('Planes'),
-     PfrpgSkills::Knowledge.new('Religion'),
-     PfrpgSkills::Linguistics.new,
-     PfrpgSkills::Profession.new,
-     PfrpgSkills::Spellcraft.new,
+     PfrpgSkills::Skill::Appraise.new,
+     PfrpgSkills::Skill::Craft.new,
+     PfrpgSkills::Skill::Diplomacy.new,
+     PfrpgSkills::Skill::Heal.new,
+     PfrpgSkills::Skill::Knowledge.new('Arcana'),
+     PfrpgSkills::Skill::Knowledge.new('History'),
+     PfrpgSkills::Skill::Knowledge.new('Nobility'),
+     PfrpgSkills::Skill::Knowledge.new('Planes'),
+     PfrpgSkills::Skill::Knowledge.new('Religion'),
+     PfrpgSkills::Skill::Linguistics.new,
+     PfrpgSkills::Skill::Profession.new,
+     PfrpgSkills::Skill::Spellcraft.new,
     ]
   end
 

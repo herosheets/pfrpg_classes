@@ -17,10 +17,10 @@ class PfrpgClasses::ArcaneArcher < PfrpgClasses::Heroclass
   end
 
   def skills
-    [PfrpgSkills::Perception.new,
-     PfrpgSkills::Ride.new,
-     PfrpgSkills::Stealth.new,
-     PfrpgSkills::Survival.new
+    [PfrpgSkills::Skill::Perception.new,
+     PfrpgSkills::Skill::Ride.new,
+     PfrpgSkills::Skill::Stealth.new,
+     PfrpgSkills::Skill::Survival.new
     ]
   end
 

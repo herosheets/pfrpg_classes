@@ -46,21 +46,21 @@ class PfrpgClasses::Wizard < PfrpgClasses::Heroclass
 
   def skills
     [PfrpgSkills::Appraise.new,
-     PfrpgSkills::Craft.new,
-     PfrpgSkills::Fly.new,
-     PfrpgSkills::Linguistics.new,
-     PfrpgSkills::Profession.new,
-     PfrpgSkills::Spellcraft.new,
-     PfrpgSkills::Knowledge.new('Arcana'),
-     PfrpgSkills::Knowledge.new('Dungeoneering'),
-     PfrpgSkills::Knowledge.new('Engineering'),
-     PfrpgSkills::Knowledge.new('Geography'),
-     PfrpgSkills::Knowledge.new('History'),
-     PfrpgSkills::Knowledge.new('Local'),
-     PfrpgSkills::Knowledge.new('Nature'),
-     PfrpgSkills::Knowledge.new('Nobility'),
-     PfrpgSkills::Knowledge.new('Planes'),
-     PfrpgSkills::Knowledge.new('Religion')
+     PfrpgSkills::Skill::Craft.new,
+     PfrpgSkills::Skill::Fly.new,
+     PfrpgSkills::Skill::Linguistics.new,
+     PfrpgSkills::Skill::Profession.new,
+     PfrpgSkills::Skill::Spellcraft.new,
+     PfrpgSkills::Skill::Knowledge.new('Arcana'),
+     PfrpgSkills::Skill::Knowledge.new('Dungeoneering'),
+     PfrpgSkills::Skill::Knowledge.new('Engineering'),
+     PfrpgSkills::Skill::Knowledge.new('Geography'),
+     PfrpgSkills::Skill::Knowledge.new('History'),
+     PfrpgSkills::Skill::Knowledge.new('Local'),
+     PfrpgSkills::Skill::Knowledge.new('Nature'),
+     PfrpgSkills::Skill::Knowledge.new('Nobility'),
+     PfrpgSkills::Skill::Knowledge.new('Planes'),
+     PfrpgSkills::Skill::Knowledge.new('Religion')
     ]
   end
 

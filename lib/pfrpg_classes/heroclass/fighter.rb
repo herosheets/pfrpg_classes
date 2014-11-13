@@ -26,16 +26,16 @@ class PfrpgClasses::Fighter < PfrpgClasses::Heroclass
 
   def skills
     [
-     PfrpgSkills::Climb.new,
-     PfrpgSkills::Craft.new,
-     PfrpgSkills::HandleAnimal.new,
-     PfrpgSkills::Intimidate.new,
-     PfrpgSkills::Knowledge.new('Dungeoneering'),
-     PfrpgSkills::Knowledge.new('Engineering'),
-     PfrpgSkills::Profession.new,
-     PfrpgSkills::Ride.new,
-     PfrpgSkills::Survival.new,
-     PfrpgSkills::Swim.new
+     PfrpgSkills::Skill::Climb.new,
+     PfrpgSkills::Skill::Craft.new,
+     PfrpgSkills::Skill::HandleAnimal.new,
+     PfrpgSkills::Skill::Intimidate.new,
+     PfrpgSkills::Skill::Knowledge.new('Dungeoneering'),
+     PfrpgSkills::Skill::Knowledge.new('Engineering'),
+     PfrpgSkills::Skill::Profession.new,
+     PfrpgSkills::Skill::Ride.new,
+     PfrpgSkills::Skill::Survival.new,
+     PfrpgSkills::Skill::Swim.new
     ]
   end
 

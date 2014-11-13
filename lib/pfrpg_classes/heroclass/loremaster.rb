@@ -22,14 +22,14 @@ class PfrpgClasses::Loremaster < PfrpgClasses::Heroclass
 
   def skills
     non_knowledge =
-      [PfrpgSkills::Appraise.new,
-       PfrpgSkills::Diplomacy.new,
-       PfrpgSkills::HandleAnimal.new,
-       PfrpgSkills::Heal.new,
-       PfrpgSkills::Linguistics.new,
-       PfrpgSkills::Perform.new,
-       PfrpgSkills::Spellcraft.new,
-       PfrpgSkills::UseMagicDevice.new,
+      [PfrpgSkills::Skill::Appraise.new,
+       PfrpgSkills::Skill::Diplomacy.new,
+       PfrpgSkills::Skill::HandleAnimal.new,
+       PfrpgSkills::Skill::Heal.new,
+       PfrpgSkills::Skill::Linguistics.new,
+       PfrpgSkills::Skill::Perform.new,
+       PfrpgSkills::Skill::Spellcraft.new,
+       PfrpgSkills::Skill::UseMagicDevice.new,
       ]
     knowledge =
       [ 'Arcana',
@@ -44,7 +44,7 @@ class PfrpgClasses::Loremaster < PfrpgClasses::Heroclass
         'Religion'
       ]
     knowledge.each do |k|
-      non_knowledge <<PfrpgSkills::Knowledge.new(k)
+      non_knowledge << PfrpgSkills::Skill::Knowledge.new(k)
     end
     return non_knowledge
   end

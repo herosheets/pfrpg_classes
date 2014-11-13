@@ -21,15 +21,15 @@ class PfrpgClasses::Shadowdancer < PfrpgClasses::Heroclass
   end
 
   def skills
-    [PfrpgSkills::Acrobatics.new,
-     PfrpgSkills::Bluff.new,
-     PfrpgSkills::Diplomacy.new,
-     PfrpgSkills::Disguise.new,
-     PfrpgSkills::EscapeArtist.new,
-     PfrpgSkills::Perception.new,
-     PfrpgSkills::Perform.new,
-     PfrpgSkills::SleightOfHand.new,
-     PfrpgSkills::Stealth.new,
+    [PfrpgSkills::Skill::Acrobatics.new,
+     PfrpgSkills::Skill::Bluff.new,
+     PfrpgSkills::Skill::Diplomacy.new,
+     PfrpgSkills::Skill::Disguise.new,
+     PfrpgSkills::Skill::EscapeArtist.new,
+     PfrpgSkills::Skill::Perception.new,
+     PfrpgSkills::Skill::Perform.new,
+     PfrpgSkills::Skill::SleightOfHand.new,
+     PfrpgSkills::Skill::Stealth.new,
     ]
   end
 

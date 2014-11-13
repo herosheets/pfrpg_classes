@@ -22,21 +22,21 @@ class PfrpgClasses::DragonDisciple < PfrpgClasses::Heroclass
 
   def skills
     [
-     PfrpgSkills::Diplomacy.new,
-     PfrpgSkills::EscapeArtist.new,
-     PfrpgSkills::Fly.new,
-     PfrpgSkills::Knowledge.new("Arcana"),
-     PfrpgSkills::Knowledge.new("Dungeoneering"),
-     PfrpgSkills::Knowledge.new("Local"),
-     PfrpgSkills::Knowledge.new("History"),
-     PfrpgSkills::Knowledge.new("Nobility"),
-     PfrpgSkills::Knowledge.new("Planes"),
-     PfrpgSkills::Knowledge.new("Religion"),
-     PfrpgSkills::Knowledge.new("Nature"),
-     PfrpgSkills::Knowledge.new("Engineering"),
-     PfrpgSkills::Knowledge.new("Geography"),
-     PfrpgSkills::Perception.new,
-     PfrpgSkills::Spellcraft.new,
+     PfrpgSkills::Skill::Diplomacy.new,
+     PfrpgSkills::Skill::EscapeArtist.new,
+     PfrpgSkills::Skill::Fly.new,
+     PfrpgSkills::Skill::Knowledge.new("Arcana"),
+     PfrpgSkills::Skill::Knowledge.new("Dungeoneering"),
+     PfrpgSkills::Skill::Knowledge.new("Local"),
+     PfrpgSkills::Skill::Knowledge.new("History"),
+     PfrpgSkills::Skill::Knowledge.new("Nobility"),
+     PfrpgSkills::Skill::Knowledge.new("Planes"),
+     PfrpgSkills::Skill::Knowledge.new("Religion"),
+     PfrpgSkills::Skill::Knowledge.new("Nature"),
+     PfrpgSkills::Skill::Knowledge.new("Engineering"),
+     PfrpgSkills::Skill::Knowledge.new("Geography"),
+     PfrpgSkills::Skill::Perception.new,
+     PfrpgSkills::Skill::Spellcraft.new,
     ]
   end
 

@@ -21,12 +21,12 @@ class PfrpgClasses::Duelist < PfrpgClasses::Heroclass
   end
 
   def skills
-    [PfrpgSkills::Acrobatics.new,
-     PfrpgSkills::Bluff.new,
-     PfrpgSkills::EscapeArtist.new,
-     PfrpgSkills::Perception.new,
-     PfrpgSkills::Perform.new,
-     PfrpgSkills::SenseMotive.new
+    [PfrpgSkills::Skill::Acrobatics.new,
+     PfrpgSkills::Skill::Bluff.new,
+     PfrpgSkills::Skill::EscapeArtist.new,
+     PfrpgSkills::Skill::Perception.new,
+     PfrpgSkills::Skill::Perform.new,
+     PfrpgSkills::Skill::SenseMotive.new
     ]
   end
 

@@ -45,19 +45,19 @@ class PfrpgClasses::Druid < PfrpgClasses::Heroclass
   end
 
   def skills
-    [PfrpgSkills::Climb.new,
-     PfrpgSkills::Craft.new,
-     PfrpgSkills::Fly.new,
-     PfrpgSkills::HandleAnimal.new,
-     PfrpgSkills::Heal.new,
-     PfrpgSkills::Knowledge.new("Geography"),
-     PfrpgSkills::Knowledge.new("Nature"),
-     PfrpgSkills::Perception.new,
-     PfrpgSkills::Profession.new,
-     PfrpgSkills::Ride.new,
-     PfrpgSkills::Spellcraft.new,
-     PfrpgSkills::Survival.new,
-     PfrpgSkills::Swim.new,
+    [PfrpgSkills::Skill::Climb.new,
+     PfrpgSkills::Skill::Craft.new,
+     PfrpgSkills::Skill::Fly.new,
+     PfrpgSkills::Skill::HandleAnimal.new,
+     PfrpgSkills::Skill::Heal.new,
+     PfrpgSkills::Skill::Knowledge.new("Geography"),
+     PfrpgSkills::Skill::Knowledge.new("Nature"),
+     PfrpgSkills::Skill::Perception.new,
+     PfrpgSkills::Skill::Profession.new,
+     PfrpgSkills::Skill::Ride.new,
+     PfrpgSkills::Skill::Spellcraft.new,
+     PfrpgSkills::Skill::Survival.new,
+     PfrpgSkills::Skill::Swim.new,
     ]
   end
 

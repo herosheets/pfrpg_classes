@@ -21,21 +21,21 @@ class PfrpgClasses::Assassin < PfrpgClasses::Heroclass
   end
 
   def skills
-    [PfrpgSkills::Acrobatics.new,
-     PfrpgSkills::Bluff.new,
-     PfrpgSkills::Climb.new,
-     PfrpgSkills::Diplomacy.new,
-     PfrpgSkills::DisableDevice.new,
-     PfrpgSkills::Disguise.new,
-     PfrpgSkills::EscapeArtist.new,
-     PfrpgSkills::Intimidate.new,
-     PfrpgSkills::Linguistics.new,
-     PfrpgSkills::Perception.new,
-     PfrpgSkills::SenseMotive.new,
-     PfrpgSkills::SleightOfHand.new,
-     PfrpgSkills::Stealth.new,
-     PfrpgSkills::Swim.new,
-     PfrpgSkills::UseMagicDevice.new,
+    [PfrpgSkills::Skill::Acrobatics.new,
+     PfrpgSkills::Skill::Bluff.new,
+     PfrpgSkills::Skill::Climb.new,
+     PfrpgSkills::Skill::Diplomacy.new,
+     PfrpgSkills::Skill::DisableDevice.new,
+     PfrpgSkills::Skill::Disguise.new,
+     PfrpgSkills::Skill::EscapeArtist.new,
+     PfrpgSkills::Skill::Intimidate.new,
+     PfrpgSkills::Skill::Linguistics.new,
+     PfrpgSkills::Skill::Perception.new,
+     PfrpgSkills::Skill::SenseMotive.new,
+     PfrpgSkills::Skill::SleightOfHand.new,
+     PfrpgSkills::Skill::Stealth.new,
+     PfrpgSkills::Skill::Swim.new,
+     PfrpgSkills::Skill::UseMagicDevice.new,
     ]
   end
 
