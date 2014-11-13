@@ -45,7 +45,7 @@ class PfrpgClasses::Wizard < PfrpgClasses::Heroclass
   end
 
   def skills
-    [PfrpgSkills::Appraise.new,
+    [PfrpgSkills::Skill::Appraise.new,
      PfrpgSkills::Skill::Craft.new,
      PfrpgSkills::Skill::Fly.new,
      PfrpgSkills::Skill::Linguistics.new,
