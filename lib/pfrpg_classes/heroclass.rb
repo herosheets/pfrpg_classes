@@ -7,7 +7,12 @@ module PfrpgClasses
       @level_for_json -= 1 if (level_for_json > 20 || (prestige && level_for_json > 10))
     end
 
+    # deprecated
     def self.by_name(name)
+      self.fetch(name)
+    end
+
+    def self.fetch(name)
       c = class_list.find { |x| x.name == name }
       unless c
         c = prestige_class_list.find { |x| x.name == name }

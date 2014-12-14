@@ -33,7 +33,7 @@ class PfrpgClasses::Wizard < PfrpgClasses::Heroclass
   end
 
   def get_spells_table(level)
-    return PfrpgTables::Spells::SpellsPerDay.Wizard(level)
+    return PfrpgTables::Tables::Spells::SpellsPerDay.Wizard(level)
   end
 
   def description

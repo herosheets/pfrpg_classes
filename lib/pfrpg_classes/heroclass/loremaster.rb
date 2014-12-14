@@ -55,7 +55,7 @@ class PfrpgClasses::Loremaster < PfrpgClasses::Heroclass
 
   def get_spells_table
     # plus one of existing class
-    return PfrpgTables::Spells::SpellsPerDay.empty
+    return PfrpgTables::Tables::Spells::SpellsPerDay.empty
   end
 
   def skills_per_level

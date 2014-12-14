@@ -34,7 +34,7 @@ class PfrpgClasses::MysticTheurge < PfrpgClasses::Heroclass
 
   def get_spells_table
     # this is complicated for mystic theurge
-    return PfrpgTables::Spells::SpellsPerDay.empty
+    return PfrpgTables::Tables::Spells::SpellsPerDay.empty
   end
 
   def skills_per_level

@@ -35,7 +35,7 @@ class PfrpgClasses::Duelist < PfrpgClasses::Heroclass
   end
 
   def get_spells_table
-    return PfrpgTables::Spells::SpellsPerDay.empty
+    return PfrpgTables::Tables::Spells::SpellsPerDay.empty
   end
 
   def skills_per_level

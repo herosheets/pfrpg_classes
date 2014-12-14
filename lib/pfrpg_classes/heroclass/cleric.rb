@@ -54,7 +54,7 @@ class PfrpgClasses::Cleric < PfrpgClasses::Heroclass
   end
 
   def get_spells_table(level)
-    return PfrpgTables::Spells::SpellsPerDay.Cleric(level)
+    return PfrpgTables::Tables::Spells::SpellsPerDay.Cleric(level)
   end
 
   def spells_bonus_attr

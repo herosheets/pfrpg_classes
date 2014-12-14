@@ -33,7 +33,7 @@ class PfrpgClasses::Paladin < PfrpgClasses::Heroclass
   end
 
   def get_spells_table(level)
-    return PfrpgTables::Spells::SpellsPerDay.Paladin(level)
+    return PfrpgTables::Tables::Spells::SpellsPerDay.Paladin(level)
   end
 
   def description

@@ -33,7 +33,7 @@ class PfrpgClasses::Sorcerer < PfrpgClasses::Heroclass
   end
 
   def get_spells_table(level)
-    return PfrpgTables::Spells::SpellsPerDay.Sorcerer(level)
+    return PfrpgTables::Tables::Spells::SpellsPerDay.Sorcerer(level)
   end
 
   def spells_bonus_attr
@@ -62,7 +62,7 @@ class PfrpgClasses::Sorcerer < PfrpgClasses::Heroclass
   end
 
   def spells_known(level)
-    return PfrpgTables::Spells.sorcerer_spells_known[level]
+    return PfrpgTables::Tables::Spells.sorcerer_spells_known[level]
   end
 
   def starting_feats

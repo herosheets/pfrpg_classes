@@ -33,7 +33,7 @@ class PfrpgClasses::Barbarian < PfrpgClasses::Heroclass
   end
 
   def get_spells_table(level)
-    return  PfrpgTables::Spells::SpellsPerDay.empty
+    return  PfrpgTables::Tables::Spells::SpellsPerDay.empty
   end
 
   def description

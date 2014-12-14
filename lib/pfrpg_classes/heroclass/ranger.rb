@@ -33,7 +33,7 @@ class PfrpgClasses::Ranger < PfrpgClasses::Heroclass
   end
 
   def get_spells_table(level)
-    return PfrpgTables::Spells::SpellsPerDay.Ranger(level)
+    return PfrpgTables::Tables::Spells::SpellsPerDay.Ranger(level)
   end
 
   def spells_bonus_attr

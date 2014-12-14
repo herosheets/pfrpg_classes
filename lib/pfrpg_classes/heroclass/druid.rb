@@ -33,7 +33,7 @@ class PfrpgClasses::Druid < PfrpgClasses::Heroclass
   end
 
   def get_spells_table(level)
-    return PfrpgTables::Spells::SpellsPerDay.Druid(level)
+    return PfrpgTables::Tables::Spells::SpellsPerDay.Druid(level)
   end
 
   def spells_bonus_attr

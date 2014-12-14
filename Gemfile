@@ -15,7 +15,3 @@ gemspec
 gem 'pfrpg_skills', path: "../pfrpg_skills/"
 gem 'pfrpg_tables', path: "../pfrpg_tables/"
 gem 'pfrpg_core', path: "../pfrpg_core/"
-
-group :test do
-  gem 'minitest-rails'
-end
