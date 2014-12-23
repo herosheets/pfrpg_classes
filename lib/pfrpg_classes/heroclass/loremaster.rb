@@ -9,11 +9,11 @@ class PfrpgClasses::Loremaster < PfrpgClasses::Heroclass
   end
 
   def hit_die
-    PfrpgCore::Dice.new(1,6)
+    PfrpgUtility::Dice.new(1,6)
   end
 
   def alignment
-    PfrpgCore::Alignment.any
+    PfrpgUtility::Alignment.any
   end
 
   def description
@@ -67,9 +67,9 @@ class PfrpgClasses::Loremaster < PfrpgClasses::Heroclass
       character.feats.select { |x| x.type == 'Metamagic' || x.type == 'Item Creation' }.size >= 3
     end
     [
-      PfrpgCore::Prerequisite.new(nil, nil, metamagic),
-      PfrpgCore::Prerequisite::LanguagePrereq.new(nil, 'Draconic'),
-      PfrpgCore::Prerequisite::MiscPrereq.new('caster level', 3)
+      PfrpgUtility::Prerequisite.new(nil, nil, metamagic),
+      PfrpgUtility::Prerequisite::LanguagePrereq.new(nil, 'Draconic'),
+      PfrpgUtility::Prerequisite::MiscPrereq.new('caster level', 3)
     ]
   end
 

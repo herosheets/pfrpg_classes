@@ -9,11 +9,11 @@ class PfrpgClasses::Duelist < PfrpgClasses::Heroclass
   end
 
   def hit_die
-    PfrpgCore::Dice.new(1,10)
+    PfrpgUtility::Dice.new(1,10)
   end
 
   def alignment
-    PfrpgCore::Alignment.any
+    PfrpgUtility::Alignment.any
   end
 
   def description
@@ -48,12 +48,12 @@ class PfrpgClasses::Duelist < PfrpgClasses::Heroclass
 
   def prerequisites
     [
-      PfrpgCore::Prerequisite::BabPrereq.new(nil, 6),
-      PfrpgCore::Prerequisite::SkillPrereq.new('acrobatics', 2),
-      PfrpgCore::Prerequisite::SkillPrereq.new('perform', 2),
-      PfrpgCore::Prerequisite::FeatPrereq.new('Dodge', nil),
-      PfrpgCore::Prerequisite::FeatPrereq.new('Mobility', nil),
-      PfrpgCore::Prerequisite::FeatPrereq.new('Weapon Finesse', nil),
+      PfrpgUtility::Prerequisite::BabPrereq.new(nil, 6),
+      PfrpgUtility::Prerequisite::SkillPrereq.new('acrobatics', 2),
+      PfrpgUtility::Prerequisite::SkillPrereq.new('perform', 2),
+      PfrpgUtility::Prerequisite::FeatPrereq.new('Dodge', nil),
+      PfrpgUtility::Prerequisite::FeatPrereq.new('Mobility', nil),
+      PfrpgUtility::Prerequisite::FeatPrereq.new('Weapon Finesse', nil),
     ]
   end
 

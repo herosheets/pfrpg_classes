@@ -9,11 +9,11 @@ class PfrpgClasses::Assassin < PfrpgClasses::Heroclass
   end
 
   def hit_die
-    PfrpgCore::Dice.new(1,8)
+    PfrpgUtility::Dice.new(1,8)
   end
 
   def alignment
-    PfrpgCore::Alignment.any_evil
+    PfrpgUtility::Alignment.any_evil
   end
 
   def description
@@ -57,10 +57,10 @@ class PfrpgClasses::Assassin < PfrpgClasses::Heroclass
 
   def prerequisites
     [
-      PfrpgCore::Prerequisite::SkillPrereq.new('disguise', 2),
-      PfrpgCore::Prerequisite::SkillPrereq.new('stealth', 5),
-      PfrpgCore::Prerequisite::AlignmentPrereq.new(nil, 'any_evil'),
-      PfrpgCore::Prerequisite::HeroclassFeaturePrereq.new('Sneak Attack', nil),
+      PfrpgUtility::Prerequisite::SkillPrereq.new('disguise', 2),
+      PfrpgUtility::Prerequisite::SkillPrereq.new('stealth', 5),
+      PfrpgUtility::Prerequisite::AlignmentPrereq.new(nil, 'any_evil'),
+      PfrpgUtility::Prerequisite::HeroclassFeaturePrereq.new('Sneak Attack', nil),
     ]
   end
 

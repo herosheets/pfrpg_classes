@@ -9,11 +9,11 @@ class PfrpgClasses::PathfinderChronicler < PfrpgClasses::Heroclass
   end
 
   def hit_die
-    PfrpgCore::Dice.new(1,8)
+    PfrpgUtility::Dice.new(1,8)
   end
 
   def alignment
-    PfrpgCore::Alignment.any
+    PfrpgUtility::Alignment.any
   end
 
   def description
@@ -73,9 +73,9 @@ class PfrpgClasses::PathfinderChronicler < PfrpgClasses::Heroclass
 
   def prerequisites
     [
-      PfrpgCore::Prerequisite::SkillPrereq.new('linguistics', 3),
-      PfrpgCore::Prerequisite::SkillPrereq.new('perform', 5),
-      PfrpgCore::Prerequisite::SkillPrereq.new('profession', 5),
+      PfrpgUtility::Prerequisite::SkillPrereq.new('linguistics', 3),
+      PfrpgUtility::Prerequisite::SkillPrereq.new('perform', 5),
+      PfrpgUtility::Prerequisite::SkillPrereq.new('profession', 5),
     ]
   end
 

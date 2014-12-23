@@ -9,11 +9,11 @@ class PfrpgClasses::Shadowdancer < PfrpgClasses::Heroclass
   end
 
   def hit_die
-    PfrpgCore::Dice.new(1,8)
+    PfrpgUtility::Dice.new(1,8)
   end
 
   def alignment
-    PfrpgCore::Alignment.any
+    PfrpgUtility::Alignment.any
   end
 
   def description
@@ -51,11 +51,11 @@ class PfrpgClasses::Shadowdancer < PfrpgClasses::Heroclass
 
   def prerequisites
     [
-      PfrpgCore::Prerequisite::SkillPrereq.new('stealth', 5),
-      PfrpgCore::Prerequisite::SkillPrereq.new('perform', 2),
-      PfrpgCore::Prerequisite::FeatPrereq.new('Combat Reflexes', nil),
-      PfrpgCore::Prerequisite::FeatPrereq.new('Dodge', nil),
-      PfrpgCore::Prerequisite::FeatPrereq.new('Mobility', nil),
+      PfrpgUtility::Prerequisite::SkillPrereq.new('stealth', 5),
+      PfrpgUtility::Prerequisite::SkillPrereq.new('perform', 2),
+      PfrpgUtility::Prerequisite::FeatPrereq.new('Combat Reflexes', nil),
+      PfrpgUtility::Prerequisite::FeatPrereq.new('Dodge', nil),
+      PfrpgUtility::Prerequisite::FeatPrereq.new('Mobility', nil),
     ]
   end
 

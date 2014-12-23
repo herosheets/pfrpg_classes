@@ -12,6 +12,6 @@ gemspec
 
 # To use debugger
 # gem 'debugger'
-gem 'pfrpg_skills', '>= 0.1.0'
+gem 'pfrpg_skills', '>= 0.1.1'
 gem 'pfrpg_tables', '>= 0.1.0'
-gem 'pfrpg_core'
+gem 'pfrpg_utility'

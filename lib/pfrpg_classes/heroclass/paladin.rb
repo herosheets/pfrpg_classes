@@ -5,11 +5,11 @@ class PfrpgClasses::Paladin < PfrpgClasses::Heroclass
   end
 
   def hit_die
-    PfrpgCore::Dice.new(1,10)
+    PfrpgUtility::Dice.new(1,10)
   end
 
   def starting_wealth
-    PfrpgCore::Dice.new(5,6, multiplier = 10)
+    PfrpgUtility::Dice.new(5,6, multiplier = 10)
   end
 
   def starting_wealth_avg

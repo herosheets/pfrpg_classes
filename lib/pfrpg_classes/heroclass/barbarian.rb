@@ -5,11 +5,11 @@ class PfrpgClasses::Barbarian < PfrpgClasses::Heroclass
   end
 
   def hit_die
-     PfrpgCore::Dice.new(1,12)
+     PfrpgUtility::Dice.new(1,12)
   end
 
   def starting_wealth
-     PfrpgCore::Dice.new(3,6, multiplier = 10)
+     PfrpgUtility::Dice.new(3,6, multiplier = 10)
   end
 
   def starting_wealth_avg
@@ -25,7 +25,7 @@ class PfrpgClasses::Barbarian < PfrpgClasses::Heroclass
   end
 
   def alignment
-     PfrpgCore::Alignment.never_lawful
+     PfrpgUtility::Alignment.never_lawful
   end
 
   def skills_per_level

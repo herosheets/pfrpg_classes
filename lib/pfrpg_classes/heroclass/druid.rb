@@ -5,11 +5,11 @@ class PfrpgClasses::Druid < PfrpgClasses::Heroclass
   end
 
   def hit_die
-    PfrpgCore::Dice.new(1,8)
+    PfrpgUtility::Dice.new(1,8)
   end
 
   def starting_wealth
-    PfrpgCore::Dice.new(2,6, multiplier = 10)
+    PfrpgUtility::Dice.new(2,6, multiplier = 10)
   end
 
   def starting_wealth_avg
@@ -25,7 +25,7 @@ class PfrpgClasses::Druid < PfrpgClasses::Heroclass
   end
 
   def alignment
-    PfrpgCore::Alignment.any_neutral #???
+    PfrpgUtility::Alignment.any_neutral #???
   end
 
   def skills_per_level

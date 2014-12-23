@@ -5,11 +5,11 @@ class PfrpgClasses::ArcaneArcher < PfrpgClasses::Heroclass
   end
 
   def hit_die
-    PfrpgCore::Dice.new(1,10)
+    PfrpgUtility::Dice.new(1,10)
   end
 
   def alignment
-    PfrpgCore::Alignment.any
+    PfrpgUtility::Alignment.any
   end
 
   def description
@@ -46,11 +46,11 @@ class PfrpgClasses::ArcaneArcher < PfrpgClasses::Heroclass
 
   def prerequisites
     [
-      PfrpgCore::Prerequisite::FeatPrereq.new('Point Blank Shot', nil),
-      PfrpgCore::Prerequisite::FeatPrereq.new('Precise Shot', nil),
-      PfrpgCore::Prerequisite::FeatPrereq.new('Weapon Focus', nil),
-      PfrpgCore::Prerequisite::BabPrereq.new(nil, 6),
-      PfrpgCore::Prerequisite::MiscPrereq.new('caster', nil)
+      PfrpgUtility::Prerequisite::FeatPrereq.new('Point Blank Shot', nil),
+      PfrpgUtility::Prerequisite::FeatPrereq.new('Precise Shot', nil),
+      PfrpgUtility::Prerequisite::FeatPrereq.new('Weapon Focus', nil),
+      PfrpgUtility::Prerequisite::BabPrereq.new(nil, 6),
+      PfrpgUtility::Prerequisite::MiscPrereq.new('caster', nil)
     ]
   end
 

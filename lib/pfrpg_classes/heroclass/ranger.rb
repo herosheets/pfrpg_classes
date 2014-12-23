@@ -5,11 +5,11 @@ class PfrpgClasses::Ranger < PfrpgClasses::Heroclass
   end
 
   def hit_die
-    PfrpgCore::Dice.new(1,10)
+    PfrpgUtility::Dice.new(1,10)
   end
 
   def starting_wealth
-    PfrpgCore::Dice.new(5,6, multiplier = 10)
+    PfrpgUtility::Dice.new(5,6, multiplier = 10)
   end
 
   def starting_wealth_avg
@@ -25,7 +25,7 @@ class PfrpgClasses::Ranger < PfrpgClasses::Heroclass
   end
 
   def alignment
-    PfrpgCore::Alignment.any
+    PfrpgUtility::Alignment.any
   end
 
   def skills_per_level

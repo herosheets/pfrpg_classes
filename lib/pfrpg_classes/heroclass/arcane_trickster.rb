@@ -9,11 +9,11 @@ class PfrpgClasses::ArcaneTrickster < PfrpgClasses::Heroclass
   end
 
   def hit_die
-    PfrpgCore::Dice.new(1,6)
+    PfrpgUtility::Dice.new(1,6)
   end
 
   def alignment
-    PfrpgCore::Alignment.never_lawful
+    PfrpgUtility::Alignment.never_lawful
   end
 
   def description
@@ -60,12 +60,12 @@ class PfrpgClasses::ArcaneTrickster < PfrpgClasses::Heroclass
 
   def prerequisites
     [
-      PfrpgCore::Prerequisite::SkillPrereq.new('disable_device', 4),
-      PfrpgCore::Prerequisite::SkillPrereq.new('escape_artist', 4),
-      PfrpgCore::Prerequisite::SkillPrereq.new('knowledge : Arcana', 4),
-      PfrpgCore::Prerequisite::AlignmentPrereq.new(nil, 'never_lawful'),
-      PfrpgCore::Prerequisite::HeroclassFeaturePrereq.new('Sneak Attack', nil),
-      PfrpgCore::Prerequisite::MiscPrereq.new('caster', nil)
+      PfrpgUtility::Prerequisite::SkillPrereq.new('disable_device', 4),
+      PfrpgUtility::Prerequisite::SkillPrereq.new('escape_artist', 4),
+      PfrpgUtility::Prerequisite::SkillPrereq.new('knowledge : Arcana', 4),
+      PfrpgUtility::Prerequisite::AlignmentPrereq.new(nil, 'never_lawful'),
+      PfrpgUtility::Prerequisite::HeroclassFeaturePrereq.new('Sneak Attack', nil),
+      PfrpgUtility::Prerequisite::MiscPrereq.new('caster', nil)
     ]
   end
 

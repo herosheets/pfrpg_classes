@@ -9,11 +9,11 @@ class PfrpgClasses::MysticTheurge < PfrpgClasses::Heroclass
   end
 
   def hit_die
-    PfrpgCore::Dice.new(1,6)
+    PfrpgUtility::Dice.new(1,6)
   end
 
   def alignment
-    PfrpgCore::Alignment.any
+    PfrpgUtility::Alignment.any
   end
 
   def description
@@ -47,11 +47,11 @@ class PfrpgClasses::MysticTheurge < PfrpgClasses::Heroclass
 
   def prerequisites
     [
-      PfrpgCore::Prerequisite::SkillPrereq.new('knowledge : arcana', 3),
-      PfrpgCore::Prerequisite::SkillPrereq.new('knowledge : religion', 3),
-      PfrpgCore::Prerequisite::MiscPrereq.new('divine', nil),
-      PfrpgCore::Prerequisite::MiscPrereq.new('caster', nil),
-      PfrpgCore::Prerequisite::MiscPrereq.new('caster level', 2)
+      PfrpgUtility::Prerequisite::SkillPrereq.new('knowledge : arcana', 3),
+      PfrpgUtility::Prerequisite::SkillPrereq.new('knowledge : religion', 3),
+      PfrpgUtility::Prerequisite::MiscPrereq.new('divine', nil),
+      PfrpgUtility::Prerequisite::MiscPrereq.new('caster', nil),
+      PfrpgUtility::Prerequisite::MiscPrereq.new('caster level', 2)
     ]
   end
 

@@ -9,11 +9,11 @@ class PfrpgClasses::EldritchKnight < PfrpgClasses::Heroclass
   end
 
   def hit_die
-    PfrpgCore::Dice.new(1,10)
+    PfrpgUtility::Dice.new(1,10)
   end
 
   def alignment
-    PfrpgCore::Alignment.any
+    PfrpgUtility::Alignment.any
   end
 
   def description
@@ -52,8 +52,8 @@ class PfrpgClasses::EldritchKnight < PfrpgClasses::Heroclass
 
   def prerequisites
     [
-      PfrpgCore::Prerequisite::FeatPrereq.new('Martial Weapon Proficiency, All', nil),
-      PfrpgCore::Prerequisite::MiscPrereq.new('caster level', 3)
+      PfrpgUtility::Prerequisite::FeatPrereq.new('Martial Weapon Proficiency, All', nil),
+      PfrpgUtility::Prerequisite::MiscPrereq.new('caster level', 3)
     ]
   end
 

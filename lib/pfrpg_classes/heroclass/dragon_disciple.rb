@@ -9,11 +9,11 @@ class PfrpgClasses::DragonDisciple < PfrpgClasses::Heroclass
   end
 
   def hit_die
-    PfrpgCore::Dice.new(1,12)
+    PfrpgUtility::Dice.new(1,12)
   end
 
   def alignment
-    PfrpgCore::Alignment.any
+    PfrpgUtility::Alignment.any
   end
 
   def description
@@ -58,9 +58,9 @@ class PfrpgClasses::DragonDisciple < PfrpgClasses::Heroclass
 
   def prerequisites
     [
-      PfrpgCore::Prerequisite::SkillPrereq.new('knowledge : arcana', 4),
-      PfrpgCore::Prerequisite::LanguagePrereq.new(nil, 'Draconic'),
-      PfrpgCore::Prerequisite::MiscPrereq.new('caster', nil)
+      PfrpgUtility::Prerequisite::SkillPrereq.new('knowledge : arcana', 4),
+      PfrpgUtility::Prerequisite::LanguagePrereq.new(nil, 'Draconic'),
+      PfrpgUtility::Prerequisite::MiscPrereq.new('caster', nil)
     ]
   end
 end
