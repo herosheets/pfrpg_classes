@@ -157,7 +157,8 @@ module PfrpgClasses
         #ap "Looking for :"
         #ap x
         #ap "Match? #{x.match(c)}"
-        return false unless x.match(c)
+        matched = x.match(c)
+        return false unless matched
       end
       return true
     end

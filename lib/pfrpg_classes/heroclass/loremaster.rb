@@ -64,7 +64,7 @@ class PfrpgClasses::Loremaster < PfrpgClasses::Heroclass
 
   def prerequisites
     metamagic = Proc.new do |character, attribute, value|
-      character.feats.select { |x| x.feat_type == 'Metamagic' || x.feat_type == 'Item Creation' }.size >= 3
+      character.feats.select { |x| x.type == 'Metamagic' || x.type == 'Item Creation' }.size >= 3
     end
     [
       PfrpgCore::Prerequisite.new(nil, nil, metamagic),
