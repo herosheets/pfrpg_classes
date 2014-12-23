@@ -10,8 +10,11 @@ gemspec
 # Git. Remember to move these dependencies to your gemspec before releasing
 # your gem to rubygems.org.
 
+gem 'rake'
+gem 'minitest'
+
 # To use debugger
 # gem 'debugger'
 gem 'pfrpg_skills', '>= 0.1.1'
 gem 'pfrpg_tables', '>= 0.1.0'
-gem 'pfrpg_utility'
+gem 'pfrpg_utility', '>= 0.1.1'
