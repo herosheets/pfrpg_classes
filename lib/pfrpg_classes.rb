@@ -1,5 +1,3 @@
-require 'pfrpg_utility'
-
 module PfrpgClasses
 end
 

@@ -16,5 +16,5 @@ gem 'minitest'
 # To use debugger
 # gem 'debugger'
 gem 'pfrpg_skills', '>= 0.1.1'
-gem 'pfrpg_tables', '>= 0.1.0'
+gem 'pfrpg_tables', '>= 0.1.2'
 gem 'pfrpg_utility', '>= 0.1.1'
